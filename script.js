@@ -44,10 +44,10 @@ let moved = false;
 function move() {
     let barrafiltro = document.getElementById('barrafiltro');
     if (!moved) {
-      barrafiltro.style.transform = "translateX(94%)";
+      barrafiltro.style.transform = "translateX(150px)";
         moved = true;
     } else {
-      barrafiltro.style.transform = "translateX(0%)";
+      barrafiltro.style.transform = "translateX(0px)";
         moved = false;
     }
 }
