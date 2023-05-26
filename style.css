@@ -1,7 +1,23 @@
+* {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+ 
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+footer {
+  color: white;
+  width: 100%;
+  background-color: black;
+}
+ 
  /*swiper*/
     .swiper {
       width: 80%;
-
       height: auto;
       margin: auto;
     }
@@ -36,6 +52,7 @@
         
     }
 
+
     .swiper-button-next, .swiper-rtl  {
         right: var(--swiper-navigation-sides-offset, 15px);
         left: auto;
@@ -47,6 +64,22 @@
         right: auto;
     }
 
+/*search*/
+    #form {
+      text-align: center;
+      margin: 10px;
+    }
+    
+    #search {
+      padding: 10px;
+      margin-right: 10px;
+    }
+    
+    #Cerca {
+      padding: 10px;
+    }
+
+
     /*griglia*/
     #immaginepreview {
         max-width: 150px;
@@ -56,29 +89,59 @@
     
     .product {
         text-align: center;
-
+        position: relative;
     }
 
+    .prezzogriglia {
+      background-color: rgb(253, 74, 104);
+      padding: 10px;
+      width: 90px;
+      text-align: center;
+      margin: auto;
+      border-radius: 10px;
+      color: white;
+    }
 
+ 
+    /*barra filtro*/
     #barrafiltro {
       background-color: rgb(102, 219, 184);
       position: fixed;
-      padding: 20px;
-      left: 0px;
+      padding: 0px;
+      left: -165px;
       height: 100%;
+      width: 165px;
       z-index: 10;
-      left: -160px;
-      display: block;
       transition: transform 700ms cubic-bezier(.81,-0.45,.17,1.45);
-      font-size: 15px;
+      font-size: 15px !important;
+
     }
 
+    #checkbox {
+      position: relative;
+      left: 30px;
+      top: 20px;
+      width: 170px;
+      text-align: left;
+      margin: auto;
+
+    }
+
+    #categoriefiltro {
+      position: relative;
+      left: 28px;
+      font-size: 20pt;
+      top: 5px;
+      width: 170px;
+      text-align: left;
+      margin: auto;
+    }
 
     #bottonefiltro {
-      position: relative;
-      left: 145px;
-      top: 55px;
-      font-size: 30pt;
+      position: absolute;
+      left: 175px;
+      bottom: 200px;
+      font-size: 20pt;
       z-index: 11;
       background-color: white;
       border-radius: 100%;

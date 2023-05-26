@@ -6,6 +6,49 @@
         },
       });
 
+
+/// Bottoni swiper
+
+
+
+function fadeIn() {
+let buttonNext = document.getElementsByClassName('.swiper-button-next::after');
+buttonNext.style = "background-color: red;";
+}
+
+
+///
+
+/// Search
+
+document.querySelector('form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const bootstrapClass = document.querySelector('.col.col-sm-12.col-md-6.col-lg-4');
+  bootstrapClass.classList.remove('col-md-6', 'col-lg-4');
+  bootstrapClass.classList.add('col-md-12', 'col-lg-12');
+
+  var search = document.querySelector('#search').value.toLowerCase();
+
+  console.log('Ricerca:', search);
+
+  var items = document.querySelectorAll('.product');
+
+  items.forEach(function(item) {
+      var itemName = item.querySelector('.card-title').textContent.toLowerCase();
+  
+      if (itemName.includes(search)) {
+          item.style.display = 'block';
+      } else {
+          item.style.display = 'none';
+      }
+        
+      
+
+  });
+});
+
+
+
       
 ////
 
@@ -44,12 +87,23 @@ let moved = false;
 function move() {
     let barrafiltro = document.getElementById('barrafiltro');
     if (!moved) {
-      barrafiltro.style.transform = "translateX(150px)";
+      barrafiltro.style = "transform: translateX(150px);";
         moved = true;
     } else {
-      barrafiltro.style.transform = "translateX(0px)";
+      barrafiltro.style = "transform: translateX(0px);";
         moved = false;
     }
 }
 
 ///
+
+//Apparizione info al passaggio mouse
+
+function showInfo() {
+  document.querySelector(".infolibricheappare").style.display = "block";
+}
+
+function hideInfo() {
+  document.querySelector(".infolibricheappare").style.display = "none";
+}
+

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- ChatGPT: mi scrivi una pagina html che usa bootstrap5 -->
 <html lang="en">
 
 <head>
@@ -18,22 +17,30 @@
   <!-- Google fonts-->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
+   
+    
 </head>
 
 <body>
 
-<!-- Filtro categorie -->
+  <!-- Filtro categorie -->
 
-<div id="barrafiltro">
-  <span id="bottonefiltro" onclick="move()" class="material-symbols-outlined">
-    search
+  <div id="barrafiltro">
+    <span id="bottonefiltro" onclick="move()" class="material-symbols-outlined">
+      search
     </span>
-  <h2>Categorie:</h2>
-  <label><input type="checkbox" value="infantile" onchange="filterProducts()"> Infantile</label><br>
-  <label><input type="checkbox" value="Romanzi rosa" onchange="filterProducts()"> Romanzi rosa</label><br>
-  <label><input type="checkbox" value="Avventura" onchange="filterProducts()"> Avventura</label><br>
-</div>
+    <div id="categoriefiltro">Categorie:</div>
+    <div class="form-check">
+      <div id="checkbox">
+        <label><input class="form-check-input" type="checkbox" value="infantile" onchange="filterProducts()">
+          Infantile</label><br>
+        <label><input class="form-check-input" type="checkbox" value="Romanzi rosa" onchange="filterProducts()"> Romanzi
+          rosa</label><br>
+        <label><input class="form-check-input" type="checkbox" value="Avventura" onchange="filterProducts()">
+          Avventura</label><br>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -68,7 +75,7 @@
       </div>
     </nav>
   </header>
-
+  
 
   <!-- Swiper -->
   <div class="swiper mySwiper">
@@ -89,99 +96,109 @@
     <div class="swiper-button-prev"></div>
   </div>
 
+<!-- search -->
+<form id="form">
+  <input type="text" id="search" placeholder="Cerca...">
+  <input type="submit" value="Cerca" id="cerca">
+</form>
 
-  
 
   <main class="container my-5">
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
       <!-- prodotto -->
       <div class="col col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-        <div class="product" data-category="Romanzi rosa">
+        <div class="product" data-category="Romanzi rosa" onmouseover="showInfo()" onmouseout="hideInfo()">
           <img id="immaginepreview" src="../../../elementi/immagini/un amore da favola 2.png" class="card-img-top"
             alt="Product 1">
           <div class="card-body">
             <h5 class="card-title">Un amore da favola</h5>
             <p class="card-text">
               di Giulia Bianchi <br>
-              <br> Editore: Rizzoli
-              <br> Data di pubblicazione: 2019
-              <br> Lingua: Italiano
-              <br> Numero di pagine: 240
-              <br> Età di lettura: da 14 anni
             </p>
-            <a href="scopridipiu.html" class="btn btn-primary">Scopri di più</a>
+            <div class="prezzogriglia">
+              € 20
+            </div>
+            <div class="infolibricheappare">
+              
+              <p>
+                <br> Editore: Rizzoli
+                <br> Data di pubblicazione: 2019
+                <br> Lingua: Italiano
+                <br> Numero di pagine: 240
+                <br> Età di lettura: da 14 anni
+              </p>
+              <a href="scopridipiu.html" class="btn btn-primary">Scopri di più</a>
+            </div>
           </div>
         </div>
       </div>
       <!-- fine prodotto -->
+
+      <!-- prodotto -->
       <div class="col col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-        <div class="product" data-category="Romanzi rosa">
-          <img src="product-image-2.jpg" class="card-img-top" alt="Product 2">
+        <div class="product" data-category="Avventura" onmouseover="showInfo()" onmouseout="hideInfo()">
+          <img id="immaginepreview" src="../../../elementi/immagini/un amore da favola 2.png" class="card-img-top"
+            alt="Product 1">
           <div class="card-body">
-            <h5 class="card-title">Product 2</h5>
-            <p class="card-text">Description of Product 2 goes here...</p>
-            <a href="#" class="btn btn-primary">Buy Now</a>
+            <h5 class="card-title">Un amore da favola</h5>
+            <p class="card-text">
+              di Giulia Bianchi <br>
+            </p>
+            <div class="prezzogriglia">
+              € 20
+            </div>
+            <div class="infolibricheappare">
+              
+              <p>
+                <br> Editore: Rizzoli
+                <br> Data di pubblicazione: 2019
+                <br> Lingua: Italiano
+                <br> Numero di pagine: 240
+                <br> Età di lettura: da 14 anni
+              </p>
+              <a href="scopridipiu.html" class="btn btn-primary">Scopri di più</a>
+            </div>
           </div>
         </div>
       </div>
+      <!-- fine prodotto -->
 
+      <!-- prodotto -->
       <div class="col col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-        <div class="product" data-category="Romanzi rosa">
-          <img src="product-image-1.jpg" class="card-img-top" alt="Product 1">
+        <div class="product" data-category="Avventura" onmouseover="showInfo()" onmouseout="hideInfo()">
+          <img id="immaginepreview" src="../../../elementi/immagini/un amore da favola 2.png" class="card-img-top"
+            alt="Product 1">
           <div class="card-body">
-            <h5 class="card-title">Product 1</h5>
-            <p class="card-text">Description of Product 1 goes here...</p>
-            <a href="#" class="btn btn-primary">Buy Now</a>
+            <h5 class="card-title">elfo</h5>
+            <p class="card-text">
+              di Giulia Bianchi <br>
+            </p>
+            <div class="prezzogriglia">
+              € 20
+            </div>
+            <div class="infolibricheappare">
+              
+              <p>
+                <br> Editore: Rizzoli
+                <br> Data di pubblicazione: 2019
+                <br> Lingua: Italiano
+                <br> Numero di pagine: 240
+                <br> Età di lettura: da 14 anni
+              </p>
+              <a href="scopridipiu.html" class="btn btn-primary">Scopri di più</a>
+            </div>
           </div>
         </div>
       </div>
-
-
-
-      <div class="col col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-        <div class="product" data-category="Romanzi rosa">
-          <img src="product-image-1.jpg" class="card-img-top" alt="Product 1">
-          <div class="card-body">
-            <h5 class="card-title">Product 1</h5>
-            <p class="card-text">Description of Product 1 goes here...</p>
-            <a href="#" class="btn btn-primary ">Buy Now</a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-        <div class="product" data-category="Avventura">
-          <img src="product-image-1.jpg" class="card-img-top" alt="Product 1">
-          <div class="card-body">
-            <h5 class="card-title">Product 1</h5>
-            <p class="card-text">Description of Product 1 goes here...</p>
-            <a href="#" class="btn btn-primary">Buy Now</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center">
-        <div class="product" data-category="infantile">
-          <img src="product-image-1.jpg" class="card-img-top" alt="Product 1">
-          <div class="card-body">
-            <h5 class="card-title">Product 1</h5>
-            <p class="card-text">Description of Product 1 goes here...</p>
-            <a href="#" class="btn btn-primary">Buy Now</a>
-          </div>
-        </div>
-      </div>
-
-
+      <!-- fine prodotto -->
+      
+      
     </div>
-
-
-
   </main>
 
   <footer class="bg-dark text-light py-3">
     <div class="container text-center">
-      <p>&copy; 2023 Il mio sito - Tutti i diritti riservati</p>
+      <p> 2023 Il mio sito - Tutti i diritti riservati</p>
     </div>
   </footer>
 
@@ -194,8 +211,9 @@
   <script src="script.js"></script>
 
 
-
+<a href="">
 
 </body>
 
 </html>
+
