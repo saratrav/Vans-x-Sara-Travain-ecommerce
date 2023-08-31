@@ -54,6 +54,11 @@ body {
   
 }
 
+@media (min-width: 992px) and (max-width: 1200px) {
+  #container {
+    top: -7vh;
+  }
+}
 
 /* menu per cellulare
 
@@ -266,8 +271,9 @@ footer a:hover {
 /*-------------*/
 
 .swiper {
-  width: 70%;
-  height: 70%;
+  width: 90%;
+  height: 90%;
+  margin-top: 3vh;
 }
 
 .swiper-slide {
@@ -290,46 +296,6 @@ footer a:hover {
 
 /* griglia*/
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, fr));
-  grid-gap: 10px;
-}
-
-.product-item {
-  background-color: #ffffff;
-  padding: 20px;
-  text-align: center;
-
-}
-
-.product-item img {
-  max-width: 60%;
-  height: auto;
-}
-
-.product-item h3 {
-  margin-top: 10px;
-  font-size: 20px;
-}
-
-.product-item .btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 17px;
-  background-color: deeppink;
-  color: #fff;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-  border-radius: 86% 14% 89% 11% / 19% 88% 12% 81%;
-  width: 20vh;
-}
-
-.product-item .btn:hover {
-  background-color: rgb(255, 255, 255);
-  border-color: deeppink;
-}
-
 #scarpa1 {
   border-radius: 74% 26% 33% 67% / 38% 30% 70% 62%;
 }
@@ -340,6 +306,22 @@ footer a:hover {
 
 #scarpa3 {
   border-radius: 72% 28% 78% 22% / 50% 46% 54% 50%;
+}
+
+.containergrid {
+  margin: 90px 30px 0 30px;
+}
+
+.containergrid img:hover {
+  border: 6px solid #FFA101;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card {
+  --bs-card-border-width: 0px;
 }
 
 
@@ -437,6 +419,18 @@ label {
   margin-top: 20px;
 }
 
+/* 360 view box */
+.viewbox {
+  background-color: red;
+  height: 30vh;
+  width: 50vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 30vh;
+}
+
 /*-------------*/
 /* ARTISTA.HTML*/
 /*-------------*/
@@ -474,7 +468,7 @@ label {
 
 
 /*-------------*/
-/* ARTISTA.HTML*/
+/* CARRELLO.HTML*/
 /*-------------*/
 
 a.buttonview {
@@ -490,4 +484,8 @@ td img {
 
 td .form-control {
   border-radius: 90% 10% 93% 7% / 8% 91% 9% 92% !important;
+}
+
+#carouselMultiItemExample {
+  margin-top: 7vh;
 }
