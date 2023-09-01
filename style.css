@@ -251,6 +251,11 @@ footer a:hover {
   color: #FFA101;
 }
 
+.imginstafooter {
+  width: 20px;
+  height: 20px;
+}
+
 @media (max-width: 991px) {
   footer a {
     display: none;
@@ -475,9 +480,9 @@ label {
   margin-right: 20px;
   width: 30px;
   height: 30px;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   border-radius: 5px;
-  border: black solid 2px;
+  border: rgb(255, 255, 255) solid 2px;
   z-index: 1;
 }
 
