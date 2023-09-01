@@ -582,22 +582,59 @@ model-viewer>#ar-prompt>img {
 
 
 /*-------------*/
-/* ARTISTA.HTML*/
+/* SCOPRIDIPIU.HTML*/
 /*-------------*/
 
 .imgsara img {
-  width: 20vh;
-  height: 20vh;
+  position: absolute;
+}
+
+.imgsara img:nth-child(1) {
+  width: 200px;
+  height: 200px;
   border-radius: 41% 59% 42% 58% / 69% 41% 59% 31%;
   border: px solid #001122;
 }
 
 .imgsara img:nth-child(2) {
+  position: relative;
+  bottom: -100px;
+  right: -120px;
+  width: 100px;
+  height: 100px;
   border: 6px solid rgb(255, 255, 255);
-  margin-top: -70px;
-  margin-left: 110px;
-  width: 11vh;
-  height: 11vh;
+  border-radius: 41% 59% 42% 58% / 69% 41% 59% 31%;
+}
+
+.instapic {
+position: relative;
+top: 100px;
+
+
+}
+
+.instapic img {
+width: 30px !important;
+height: 30px !important;
+position: relative;
+}
+
+.instapic:hover {
+  color: #FFA101;
+}
+
+a.instapic {
+  color: black;
+  text-decoration: none !important;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .instapic {
+    top: 200px;
+    right: 50px;
+    margin-top: 20px;
+    } 
 }
 
 .Descrizioneartista {
@@ -607,8 +644,21 @@ model-viewer>#ar-prompt>img {
   border: 2px solid #001122;
 }
 
+@media (max-width: 767px) {
+  .Descrizioneartista {
+    margin-top: 180px;
+    }
+
+    .imgsara img:nth-child(2) {
+      position: relative;
+      bottom: -120px;
+      right: -190px;
+
+    }
+}
+
 .firma {
-  width: 17vh;
+  width: 130px;
   height: auto;
   display: block;
   filter: invert(100%);
@@ -616,6 +666,12 @@ model-viewer>#ar-prompt>img {
   margin: 50px 0px 0px 50px;
 }
 
+@media (max-width: 767px) {
+  .col-sm-12 .imgsara {
+      display: flex;
+      justify-content: center;
+  }
+}
 
 /*-------------*/
 /* CARRELLO.HTML*/
