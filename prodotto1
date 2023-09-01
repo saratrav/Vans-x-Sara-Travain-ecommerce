@@ -131,7 +131,7 @@
                 <div class="colorsquare" id="black-square"></div>
                 <div class="colorsquare" id="white-square"></div>
 
-                <div class="buttonview">360° view</div>
+                <div class="buttonview" onclick="viewAppear()">360° view</div>
             </div>
 
             <div class="col-sm-12 col-md-12 col-lg-6">
@@ -156,10 +156,31 @@
         </div>
     </div>
 
-    <div class="viewbox"></div>
+    <!--360 viewer box-->
+    <div class="viewbox1">
+
+        <span onclick="viewDisappear()" class="material-symbols-outlined">
+            close
+        </span>
+        <button onclick="bgColorChange()" class="blackbgmodel"></button>
+ 
+        <!-- <model-viewer> HTML element -->
+        <model-viewer src="glb/foryou.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
+            poster="poster.webp" shadow-intensity="1" autoplay exposure="0.68">
+            <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+            </div>
+            <button slot="ar-button" id="ar-button">
+                View in your space
+            </button>
+            <div id="ar-prompt">
+                <img src="ar_hand_prompt.png">
+            </div>
+        </model-viewer>
+
+    </div>
 
     <!-- Footer -->
-
     <footer>
 
         <svg version="1.1" id="visual" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
@@ -206,6 +227,9 @@
 
 
     <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
+
 
     <script>
         //change color on click
