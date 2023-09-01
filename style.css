@@ -402,6 +402,10 @@ label {
   margin-top: 20px;
 }
 
+.colorsquare:hover {
+  cursor: pointer;
+}
+
 #black-square {
   background-color: black;
   margin: 0px 10px -10px 10px;
