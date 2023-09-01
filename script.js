@@ -132,13 +132,12 @@ function bgColorChange() {
   if (modelViewer.style.backgroundColor === 'black') {
       modelViewer.style.backgroundColor = 'white';
       modelViewer.style.border = '2px solid rgba(255, 255, 255, 0.479)';
-      blackWhiteButton.style.backgroundColor = 'white';
-      blackWhiteButton.style.borderColor = 'black';
+      blackWhiteButton.style.backgroundColor === 'white';
+      blackWhiteButton.style.backgroundColor = 'black';
   } else {
       modelViewer.style.backgroundColor = 'black';
       modelViewer.style.border = 'none';
-      blackWhiteButton.style.backgroundColor = 'black';
-      blackWhiteButton.style.borderColor = 'white';
+      blackWhiteButton.style.backgroundColor = 'white';
   }
 }
 
