@@ -290,7 +290,7 @@ footer a:hover {
 
 
 
-/* griglia*/
+/* scarpe*/
 
 #scarpa1 {
   border-radius: 74% 26% 33% 67% / 38% 30% 70% 62%;
@@ -306,6 +306,10 @@ footer a:hover {
 
 .containergrid {
   margin: 90px 30px 0 30px;
+}
+
+.containergrid a{
+  margin: 0 5%;
 }
 
 .containergrid img:hover {
@@ -328,6 +332,11 @@ footer a:hover {
 .containersquares {
   display: flex;
   margin: 0 auto;
+}
+
+.col-md-12 .containersquares {
+  display: flex;
+  justify-content: center;
 }
 
 .big-image {
@@ -609,13 +618,14 @@ model-viewer>#ar-prompt>img {
 .instapic {
 position: relative;
 top: 100px;
+margin: 5px;
 
 
 }
 
 .instapic img {
-width: 30px !important;
-height: 30px !important;
+width: 25px !important;
+height: 25px !important;
 position: relative;
 }
 
@@ -691,14 +701,41 @@ a.buttoncarrello {
   margin-bottom: 40px;
 }
 
+td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+  width: 500px;
+}
+
+thead th {
+  text-align: center;
+}
+
+table {
+  table-layout: auto !important;
+}
+
+table th:first-child, table td:first-child {
+  width: 0px;
+}
+
 td img {
   width: 50px;
   border-radius: 52% 48% 73% 27% / 45% 62% 38% 55%;
+  display: block;
+  margin: 0 auto;
+
 }
 
 td .form-control {
-  border-radius: 90% 10% 93% 7% / 8% 91% 9% 92% !important;
+  width: 60px;
+  text-align: center;
+  margin: auto;
 }
+
 
 #carouselMultiItemExample {
   margin-top: 7vh;
