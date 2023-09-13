@@ -97,12 +97,12 @@
 
             <div class="col-sm-12 col-md-12 col-lg-6">
                 <div class="containersquares">
-                    <img class="big-image" id="big-image" src="images/scarpe_square_foryou_lato.png" alt="">
+                    <img class="big-image" id="big-image" src="images/scarpe_square_brunobear_lato.png" alt="">
                     <div class="small-images">
-                        <img src="images/scarpe_square_foryou_lato.png" onmouseover="changeImage(this)">
-                        <img src="images/scarpe_square_foryou_front.png" alt="Small Image 2"
+                        <img src="images/scarpe_square_brunobear_lato.png" onmouseover="changeImage(this)">
+                        <img src="images/scarpe_square_brunobear_front.png" alt="Small Image 2"
                             onmouseover="changeImage(this)">
-                        <img src="images/scarpe_square_foryou_behind.png" alt="Small Image 2" alt="Small Image 3"
+                        <img src="images/scarpe_square_brunobear_behind.png" alt="Small Image 2" alt="Small Image 3"
                             onmouseover="changeImage(this)">
                     </div>
                 </div>
@@ -126,8 +126,8 @@
                 </div>
 
 
-                <div class="colorsquare" id="black-square"></div>
-                <div class="colorsquare" id="white-square"></div>
+                <div class="colorsquare" id="rosa-square"></div>
+                <div class="colorsquare" id="azzurro-square"></div>
 
                 <span class="buttonview material-symbols-outlined" onclick="viewAppear()">
                     360
@@ -138,20 +138,20 @@
 
             <div class="col-sm-12 col-md-12 col-lg-6">
                 <div>
-                    <h1>For You Vans</h1>
+                    <h1>Bruno Bear Vans</h1>
                     <div>
-                        Se vuoi essere parte del For You Movement, non puoi perderti la scarpa che ho realizzato per te!
-                        Si tratta di una sneaker con un pattern originale e colorato, ispirato allo stile For You di
-                        questa stagione. La scarpa ha due modelli, uno nero e uno bianco, per adattarsi al tuo look
-                        preferito. Il pattern è composto da forme organiche e piccoli disegni schizzati che rappresentano le
-                        caratteristiche del gruppo di Novara: vivace, allegro e dinamico! La scarpa è comoda e leggera,
-                        perfetta per ballare, cantare e divertirsi insieme agli amici. Non lasciarti sfuggire questa
-                        occasione, acquista subito la scarpa For You e unisciti al movimento! <a id="foryoumovement" href="https://www.instagram.com/explore/tags/4youmovement/" target="_blank">#4youmovement</a>
+                        Se cerchi una scarpa originale e adorabile, non puoi perderti la nostra nuova creazione:
+                        Bruno Bruno Vans! Si tratta di una scarpa con due modelli disponibili, uno rosa e uno azzurro, che ha
+                        come protagonista un simpatico orso che indossa un cappellino e una cravatta a farfalla gialli.
+                        La scarpa ha un ricamo grande davanti che raffigura il viso dell'orso. Sulla parte laterale, c'è
+                        la scritta "so cute" ricamata, per sottolineare il fascino irresistibile di questo animaletto.
+                        La scarpa è comoda, leggera e facile da abbinare, perfetta per dare un tocco di allegria al tuo
+                        look. Non lasciarti scappare Bruno Bear Vans, è un'edizione limitata!
                     </div>
                 </div>
             </div>
 
-            <img class="fotodacatalogo" src="images/scarpa_for_you.jpg" alt="">
+            <img class="fotodacatalogo" src="images/scarpa_orsobruno_fotodacatalogo.png" alt="">
 
 
         </div>
@@ -169,8 +169,8 @@
 
 
         <!-- <model-viewer> HTML element -->
-        <model-viewer id="shoe" camera-controls touch-action="pan-y" src="glb/foryou.glb" ar alt="A 3D model of a Shoe"
-            autoplay>
+        <model-viewer id="shoe" camera-controls touch-action="pan-y" src="glb/brunobear.glb" ar
+            alt="A 3D model of a Shoe" autoplay>
             <div class="controls">
                 <div class="colorescarpa">Colore scarpa: <select id="variant"></select></div>
             </div>
@@ -231,31 +231,31 @@
 
 
     <script>
-        //change color on click
-        const initialBigImage = document.querySelector('.big-image').src;
+        //change color on click rosa
 
-        document.getElementById("black-square").onclick = function () {
-            document.getElementById("big-image").src = "images/scarpe_square_foryou_lato_black.png";
+        document.getElementById("rosa-square").onclick = function () {
+            document.getElementById("big-image").src = "images/scarpe_square_brunobear_lato.png";
 
 
             let smallImages = document.querySelectorAll('.small-images img');
-            smallImages[0].src = 'images/scarpe_square_foryou_lato_black.png';
+            smallImages[0].src = 'images/scarpe_square_brunobear_lato.png';
 
-            smallImages[1].src = 'images/scarpe_square_foryou_front_black.png';
+            smallImages[1].src = 'images/scarpe_square_brunobear_front.png';
 
-            smallImages[2].src = 'images/scarpe_square_foryou_behind_black.png';
+            smallImages[2].src = 'images/scarpe_square_brunobear_behind.png';
         };
 
+        //change color on click azzurro
 
-        document.getElementById("white-square").onclick = function () {
-            document.querySelector('.big-image').src = initialBigImage;
+        document.getElementById("azzurro-square").onclick = function () {
+            document.querySelector('.big-image').src = "images/scarpe_square_brunobear_lato_azzurro.png";
 
             let smallImages = document.querySelectorAll('.small-images img');
-            smallImages[0].src = 'images/scarpe_square_foryou_lato.png';
+            smallImages[0].src = 'images/scarpe_square_brunobear_lato_azzurro.png';
 
-            smallImages[1].src = 'images/scarpe_square_foryou_front.png';
+            smallImages[1].src = 'images/scarpe_square_brunobear_front_azzurro.png';
 
-            smallImages[2].src = 'images/scarpe_square_foryou_behind.png';
+            smallImages[2].src = 'images/scarpe_square_brunobear_behind_azzurro.png';
         };
 
 

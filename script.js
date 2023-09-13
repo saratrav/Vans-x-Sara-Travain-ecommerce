@@ -27,7 +27,8 @@ var productViewer = new ProductViewer({
   element: document.querySelector('.homeproduct_viewer .product_viewer'),
   imagePath: './images/homepagescarpa/',
   filePrefix: 'img',
-  fileExtension: '.png'
+  fileExtension: '.png',
+
 });
 
 
@@ -42,14 +43,15 @@ document.querySelector('.product_viewer').addEventListener('mouseup', function (
 
 // if you want to see it will roted 360 deg once it loaded then you have to write some extra code
 
-ProductViewer.once('loaded', function () {
-  ProductViewer.animate360();
+productViewer.once('loaded', function () {
+  productViewer.animate360();
 })
 
-var productViewer = document.querySelector('.product_viewer');
-productViewer.style.position = 'absolute';
-productViewer.style.top = '50px';
-productViewer.style.left = '100px';
+//cookie
+
+function chiudiCookie() {
+  document.getElementById('cookie').style.display = 'none';
+}
 
 
 //************//
@@ -107,7 +109,6 @@ function viewAppear() {
     overlay.id = 'overlay';
     document.body.appendChild(overlay);
   }
-
   overlay.style.display = 'block';
 }
 
@@ -129,15 +130,18 @@ function viewDisappear() {
 function bgColorChange() {
   var modelViewer = document.querySelector('model-viewer');
   var blackWhiteButton = document.querySelector('.blackbgmodel');
+  var coloreScarpa = document.querySelector('.colorescarpa')
   if (modelViewer.style.backgroundColor === 'black') {
-      modelViewer.style.backgroundColor = 'white';
-      modelViewer.style.border = '2px solid rgba(255, 255, 255, 0.479)';
-      blackWhiteButton.style.backgroundColor === 'white';
-      blackWhiteButton.style.backgroundColor = 'black';
+    modelViewer.style.backgroundColor = 'white';
+    modelViewer.style.border = '2px solid rgba(255, 255, 255, 0.479)';
+    blackWhiteButton.style.backgroundColor === 'white';
+    blackWhiteButton.style.backgroundColor = 'black';
+    coloreScarpa.style.color === 'white';
+    coloreScarpa.style.color = 'black';
   } else {
-      modelViewer.style.backgroundColor = 'black';
-      modelViewer.style.border = 'none';
-      blackWhiteButton.style.backgroundColor = 'white';
+    modelViewer.style.backgroundColor = 'black';
+    modelViewer.style.border = 'none';
+    blackWhiteButton.style.backgroundColor = 'white';
+    coloreScarpa.style.color = 'white';
   }
 }
-

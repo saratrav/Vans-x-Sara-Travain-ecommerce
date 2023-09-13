@@ -97,12 +97,12 @@
 
             <div class="col-sm-12 col-md-12 col-lg-6">
                 <div class="containersquares">
-                    <img class="big-image" id="big-image" src="images/scarpe_square_foryou_lato.png" alt="">
+                    <img class="big-image" id="big-image" src="images/scarpe_square_sarastyle_lato.png" alt="">
                     <div class="small-images">
-                        <img src="images/scarpe_square_foryou_lato.png" onmouseover="changeImage(this)">
-                        <img src="images/scarpe_square_foryou_front.png" alt="Small Image 2"
+                        <img src="images/scarpe_square_sarastyle_lato.png" onmouseover="changeImage(this)">
+                        <img src="images/scarpe_square_sarastyle_front.png" alt="Small Image 2"
                             onmouseover="changeImage(this)">
-                        <img src="images/scarpe_square_foryou_behind.png" alt="Small Image 2" alt="Small Image 3"
+                        <img src="images/scarpe_square_sarastyle_behind.png" alt="Small Image 2" alt="Small Image 3"
                             onmouseover="changeImage(this)">
                     </div>
                 </div>
@@ -138,20 +138,20 @@
 
             <div class="col-sm-12 col-md-12 col-lg-6">
                 <div>
-                    <h1>For You Vans</h1>
+                    <h1>Sara Style</h1>
                     <div>
-                        Se vuoi essere parte del For You Movement, non puoi perderti la scarpa che ho realizzato per te!
-                        Si tratta di una sneaker con un pattern originale e colorato, ispirato allo stile For You di
-                        questa stagione. La scarpa ha due modelli, uno nero e uno bianco, per adattarsi al tuo look
-                        preferito. Il pattern è composto da forme organiche e piccoli disegni schizzati che rappresentano le
-                        caratteristiche del gruppo di Novara: vivace, allegro e dinamico! La scarpa è comoda e leggera,
-                        perfetta per ballare, cantare e divertirsi insieme agli amici. Non lasciarti sfuggire questa
-                        occasione, acquista subito la scarpa For You e unisciti al movimento! <a id="foryoumovement" href="https://www.instagram.com/explore/tags/4youmovement/" target="_blank">#4youmovement</a>
+                        
+                        La scarpa unica e originale, frutto della collaborazione tra Vans e Sara Travain è disponibile in due modelli: nero e bianco, entrambi con un pattern
+                        esclusivo che rappresenta il mondo e l'arte di Sara. Il pattern è composto da diversi elementi
+                        schizzati con lo stile della designer, tra cui il logo di Vans, il logo personale di Sara e
+                        altri simboli che esprimono la sua personalità e la sua creatività. La scarpa è la prima della
+                        nuova collezione Vans x Sara Travain, una collab che promette di stupire e divertire gli amanti
+                        delle sneakers e del design!
                     </div>
                 </div>
             </div>
 
-            <img class="fotodacatalogo" src="images/scarpa_for_you.jpg" alt="">
+            <img class="fotodacatalogo" src="images/scarpa_sarastyle_fotodacatalogo.png" alt="">
 
 
         </div>
@@ -169,8 +169,8 @@
 
 
         <!-- <model-viewer> HTML element -->
-        <model-viewer id="shoe" camera-controls touch-action="pan-y" src="glb/foryou.glb" ar alt="A 3D model of a Shoe"
-            autoplay>
+        <model-viewer id="shoe" camera-controls touch-action="pan-y" src="glb/sarastyle.glb" ar
+            alt="A 3D model of a Shoe" autoplay>
             <div class="controls">
                 <div class="colorescarpa">Colore scarpa: <select id="variant"></select></div>
             </div>
@@ -231,31 +231,31 @@
 
 
     <script>
-        //change color on click
-        const initialBigImage = document.querySelector('.big-image').src;
+        //change color on click black
 
         document.getElementById("black-square").onclick = function () {
-            document.getElementById("big-image").src = "images/scarpe_square_foryou_lato_black.png";
+            document.getElementById("big-image").src = "images/scarpe_square_sarastyle_lato.png";
 
 
             let smallImages = document.querySelectorAll('.small-images img');
-            smallImages[0].src = 'images/scarpe_square_foryou_lato_black.png';
+            smallImages[0].src = 'images/scarpe_square_sarastyle_lato.png';
 
-            smallImages[1].src = 'images/scarpe_square_foryou_front_black.png';
+            smallImages[1].src = 'images/scarpe_square_sarastyle_front.png';
 
-            smallImages[2].src = 'images/scarpe_square_foryou_behind_black.png';
+            smallImages[2].src = 'images/scarpe_square_sarastyle_behind.png';
         };
 
+        //change color on click white
 
         document.getElementById("white-square").onclick = function () {
-            document.querySelector('.big-image').src = initialBigImage;
+            document.querySelector('.big-image').src = "images/scarpe_square_sarastyle_lato_white.png";
 
             let smallImages = document.querySelectorAll('.small-images img');
-            smallImages[0].src = 'images/scarpe_square_foryou_lato.png';
+            smallImages[0].src = 'images/scarpe_square_sarastyle_lato_white.png';
 
-            smallImages[1].src = 'images/scarpe_square_foryou_front.png';
+            smallImages[1].src = 'images/scarpe_square_sarastyle_front_white.png';
 
-            smallImages[2].src = 'images/scarpe_square_foryou_behind.png';
+            smallImages[2].src = 'images/scarpe_square_sarastyle_behind_white.png';
         };
 
 
