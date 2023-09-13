@@ -1,5 +1,5 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/fbefb267-fa87-47dc-a5fa-a07615f8c3c0/deploy-status)](https://app.netlify.com/sites/vansxsaratravain/deploys)
 ---
+
 theme: default
 _class: lead
 backgroundColor: #313131
@@ -23,6 +23,8 @@ style: |
 # Vans x Sara Travain
 
 Progetto Ecommerce
+[Netifly link](https://vansxsaratravain.netlify.app)
+
 
 ![bg right:56% width:820px](assets/mockup.png)
 
@@ -148,6 +150,7 @@ In questa pagina si può conoscermi meglio, come designer che ha creato i vari p
 Sara Travain
 A.A 2022/2023
 Web Design 2
+[Netifly link](https://vansxsaratravain.netlify.app)
 
 ![bg right:56% width:820px](assets/mockup.png)
 
