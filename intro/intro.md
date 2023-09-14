@@ -23,6 +23,11 @@ style: |
 # Vans x Sara Travain
 
 Progetto Ecommerce
+<br>
+
+**Anno accademico:** 2023/22
+**Docente:** Matteo Baccan
+**Corso:** Web Design 2
 
 
 ![bg right:56% width:820px](assets/mockup.png)
@@ -33,6 +38,8 @@ Progetto Ecommerce
 # Introduzione
 
 Il sito è per un'ipotetica collaboazione tra Vans e me, in cui ci sono le scarpe con le mie grafiche. Questo progetto è stato realizzato per il corso di Web Design 2 all'Accademia di Belle Arti di Novara nel 2023.
+
+link: [https://vansxsaratravain.netlify.app](https://vansxsaratravain.netlify.app/)
 
 ![bg right:40% width:515px](assets/saraxvans.png)
 
