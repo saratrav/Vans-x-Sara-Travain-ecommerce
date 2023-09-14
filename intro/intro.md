@@ -46,6 +46,7 @@ Ho utilizzato il sito [haikei app](https://haikei.app/), uno strumento online ch
 
 
 
+![bg right:43% width:552px](assets/blob.gif)
 
 
 
@@ -72,7 +73,7 @@ Ho usato [swiper](https://swiperjs.com/demos), una libreria JavaScript che offre
 ![bg right:30% width:250px](assets/swiper.svg)
 
 ---
-
+![bg  width:1150px](assets/slider.gif)
 
 ---
 
@@ -98,7 +99,7 @@ function changeImage(smallImage) {
 ---
 
 
-
+![bg width:720px](assets/hoverscarpa.gif)
 
 ---
 # Pagine Prodotti
@@ -112,7 +113,7 @@ smallImages[2].src = 'images/scarpe_square_foryou_behind_black.png';
 ```
 ---
 
-
+![bg width:720px](assets/cambiocolorescarpa.gif)
 
 ---
 # Pagine Prodotti
@@ -126,7 +127,7 @@ if (!overlay) {
    }
 ```
 ---
-
+![bg width:690px](assets/360view.gif)
 
 ---
 
