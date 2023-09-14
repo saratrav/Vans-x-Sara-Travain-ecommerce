@@ -23,7 +23,6 @@ style: |
 # Vans x Sara Travain
 
 Progetto Ecommerce
-[Netifly link](https://vansxsaratravain.netlify.app)
 
 
 ![bg right:56% width:820px](assets/mockup.png)
@@ -46,7 +45,7 @@ Ho utilizzato il sito [haikei app](https://haikei.app/), uno strumento online ch
 
 
 
-![bg right:43% width:552px](assets/blob.gif)
+![bg right:43% width:552px](assets/blob.png)
 
 
 
@@ -56,7 +55,7 @@ Ho utilizzato il sito [haikei app](https://haikei.app/), uno strumento online ch
 
 [360 degree product viewer](https://drive.google.com/file/d/1iPmH8uTKhZk8E-jfSmAxczgwMFMlzAC-/view?pli=1) è un plugin jQuery che permette di creare una visualizzazione interattiva della scarpa a 360 gradi. Per ottenere questo effetto, ho realizzato una sequenza di 36 immagini della scarpa da diverse angolazioni. Quando l’utente clicca e trascina con il mouse sulla scarpa, le immagini si alternano creando l’illusione del movimento.
 
-![bg right:30% width:270px](assets/jquery.png)
+![bg right:30% width:350px](assets/jquery.png)
 
 ---
 
@@ -70,10 +69,10 @@ Ho sfruttato le potenzialità di [haikei app](https://haikei.app/) per creare de
 
 Ho usato [swiper](https://swiperjs.com/demos), una libreria JavaScript che offre diversi demo di slider animati e personalizzabili. Ho optato per un demo in modalità Autoplay, che fa scorrere le immagini automaticamente senza bisogno di cliccare. Ogni immagine è un link che rimanda alla pagina del prodotto corrispondente.
 
-![bg right:30% width:250px](assets/swiper.svg)
+![bg right:30% width:380px](assets/swiper.png)
 
 ---
-![bg  width:1150px](assets/slider.gif)
+![bg  width:1150px](assets/slider.png)
 
 ---
 
@@ -81,7 +80,7 @@ Ho usato [swiper](https://swiperjs.com/demos), una libreria JavaScript che offre
 
 Per creare una griglia di prodotti che si adatta alle diverse dimensioni dello schermo, ho utilizzato [Bootstrap](https://getbootstrap.com/), un framework CSS che offre componenti predefiniti e personalizzabili. Per rendere le immagini più accattivanti, ho applicato un effetto di border radius variabile, usando lo strumento online [fancy border radius](https://9elements.github.io/fancy-border-radius/), che mi ha permesso di scegliere lo stile del bordo in base al design del sito.
 
-![bg right:30% width:270px](assets/bootstrap.png)
+![bg right:30% width:350px](assets/bootstrap.png)
 
 ---
 
@@ -99,7 +98,7 @@ function changeImage(smallImage) {
 ---
 
 
-![bg width:720px](assets/hoverscarpa.gif)
+![bg width:720px](assets/hoverscarpa.png)
 
 ---
 # Pagine Prodotti
@@ -113,7 +112,7 @@ smallImages[2].src = 'images/scarpe_square_foryou_behind_black.png';
 ```
 ---
 
-![bg width:720px](assets/cambiocolorescarpa.gif)
+![bg width:720px](assets/cambiocolorescarpa.png)
 
 ---
 # Pagine Prodotti
@@ -127,7 +126,7 @@ if (!overlay) {
    }
 ```
 ---
-![bg width:690px](assets/360view.gif)
+![bg width:1200px](assets/360view.png)
 
 ---
 
@@ -143,6 +142,8 @@ Ho sfutatto le funzionalità di [Bootstrap](https://getbootstrap.com/) per crear
 
 In questa pagina si può conoscermi meglio, come designer che ha creato i vari pattern per le scarpe. C'è la mia foto, il mio logo, i link ai miei due profili Instagram, una piccola descrizione su chi sono e cosa faccio. Infine, nella parte inferiore c'è una galleria a mosaico realizzata con [MDBootstrap](https://mdbootstrap.com/docs/standard/extended/gallery/), che mostra alcuni dei miei lavori.
 
+![bg left:35% width:475px](assets/sara.png)
+
 ---
 
 # Grazie
@@ -150,7 +151,6 @@ In questa pagina si può conoscermi meglio, come designer che ha creato i vari p
 Sara Travain
 A.A 2022/2023
 Web Design 2
-[Netifly link](https://vansxsaratravain.netlify.app)
 
 ![bg right:56% width:820px](assets/mockup.png)
 
