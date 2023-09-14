@@ -27,7 +27,7 @@ var productViewer = new ProductViewer({
   element: document.querySelector('.homeproduct_viewer .product_viewer'),
   imagePath: './images/homepagescarpa/',
   filePrefix: 'img',
-  fileExtension: '.png',
+  fileExtension: '.webp',
 
 });
 
