@@ -15,3 +15,5 @@ Benvenuti nel repository del mio progetto per il corso di Web Design 2, tenuto d
 Per l'esame, ho deciso di creare un sito e-commerce dedicato a una collezione esclusiva di scarpe Vans, da me ideata e disegnata.
 
 In questa collaborazione ipotetica con Vans, ho trasformato le classiche scarpe Vans, utilizzando le mie grafiche personali.
+
+![Gtmetrix](gtmetrix.png)
