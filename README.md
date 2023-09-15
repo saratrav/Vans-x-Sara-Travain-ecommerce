@@ -16,4 +16,5 @@ Per l'esame, ho deciso di creare un sito e-commerce dedicato a una collezione es
 
 In questa collaborazione ipotetica con Vans, ho trasformato le classiche scarpe Vans, utilizzando le mie grafiche personali.
 
+[Gtmetrix](https://gtmetrix.com/reports/vansxsaratravain.netlify.app/n5UJ3sgz/)
 ![Gtmetrix](gtmetrix.png)

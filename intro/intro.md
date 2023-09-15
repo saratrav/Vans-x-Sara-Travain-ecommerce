@@ -210,6 +210,10 @@ In questa pagina si può conoscermi meglio, come designer che ha creato i vari p
 
 ---
 
+
+![bg  width:90%](assets/gtmetrix.png)
+
+---
 # Grazie
 
 Sara Travain
