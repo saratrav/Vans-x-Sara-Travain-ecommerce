@@ -193,7 +193,7 @@ if (!overlay) {
 
 ---
 
-# # ***4) Carrello -*** Table e immagini
+# ***4) Carrello -*** Table e immagini
 
 Ho sfutatto le funzionalità di [Bootstrap](https://getbootstrap.com/) per creare una table con i prodotti aggiunti al carrello. Nella parte inferiore ho aggiunto una galleria di immagini usando [MDBootstrap](https://mdbootstrap.com/docs/standard/extended/gallery/), una versione personalizzata di Bootstrap che implementa il Material Design, che si basa su principi di design minimalista, elegante e intuitivo. L’obiettivo della galleria è quello di stimolare l’utente a comprare altri prodotti correlati a quelli nel carrello.
 
