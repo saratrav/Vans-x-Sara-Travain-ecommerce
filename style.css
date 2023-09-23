@@ -433,7 +433,8 @@ footer a:hover {
 }
 
 .quantity {
-  width: 35px !important;
+  width: 50px !important;
+  height: 70%;
 }
 
 .containerform {
@@ -757,39 +758,18 @@ a.buttoncarrello:hover {
   color: white;
 }
 
-td {
-    text-align: center;
-    vertical-align: middle;
+div.col:first-child {
+  max-width: 1px !important;
+  display: block;
 }
 
-th {
-  width: 500px;
-}
 
-thead th {
-  text-align: center;
-}
-
-table {
-  table-layout: auto !important;
-}
-
-table th:first-child, table td:first-child {
-  width: 0px;
-}
-
-td img {
+.imgcarrello {
   width: 50px;
   border-radius: 52% 48% 73% 27% / 45% 62% 38% 55%;
   display: block;
   margin: 0 auto;
 
-}
-
-td .form-control {
-  width: 60px;
-  text-align: center;
-  margin: auto;
 }
 
 

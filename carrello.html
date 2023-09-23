@@ -93,63 +93,55 @@ s-64,0-96,0s-64,0-96,0s-64,0-96,0s-64,0-96,0s-64,0-96,0S32,0,16,0H0V71z" />
 
   <main class="container my-5">
     <h1 class="mb-4">Carrello</h1>
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Immagine</th>
-          <th scope="col">Prodotto</th>
-          <th scope="col">Quantità</th>
-          <th scope="col">Prezzo</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td><img src="images/scarpe_square_foryou.webp" alt=""></td>
-          <td>For You</td>
-          <td><input type="number" class="quantity" min="1" value="1" /></td>
-          <td class="price" data-price="85.00">€85,00</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td><img src="images/scarpe_square_sarastyle.webp" alt=""></td>
-          <td>Sara Style</td>
-          <td><input type="number" class="quantity" min="1" value="1" /></td>
-          <td class="price" data-price="85.00">€85,00</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td><img src="images/scarpe_square_brunobear.webp" alt=""></td>
-          <td>Bruno Bear</td>
-          <td>
-            <input type="number" class="quantity" min="1" value="1" />
-          </td>
-          <td class="price" data-price="95.00">€95,00</td>
-        </tr>
-      </tbody>
-    </table>
-    <div class="row justify-content-end">
-      <div class="col-lg-4">
-        <table class="table">
-          <tbody>
-            <tr>
-              <th scope="row">Totale prodotti:</th>
-              <td id="total">€265,00</td>
-            </tr>
-            <tr>
-              <th scope="row">Costi di spedizione:</th>
-              <td>€3,50</td>
-            </tr>
-            <tr>
-              <th scope="row">Totale:</th>
-              <td>€268,50</td>
-            </tr>
-          </tbody>
-        </table>
-        <a href="#" class="buttoncarrello">Procedi al pagamento</a>
-      </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="row mb-4">
+                <div class="col">#</div>
+                <div class="col d-flex justify-content-center">Immagine</div>
+                <div class="col d-flex justify-content-center">Prodotto</div>
+                <div class="col d-flex justify-content-center">Quantità</div>
+                <div class="col d-flex justify-content-center">Prezzo</div>
+            </div>
+            <div class="row mb-4">
+                <div class="col">1</div>
+                <div class="col" ><img class="imgcarrello" src="images/scarpe_square_foryou.webp" alt=""></div>
+                <div class="col  d-flex justify-content-center">For You</div>
+                <div class="col  d-flex justify-content-center"><input type="number" class="quantity" min="1" value="1" /></div>
+                <div class="col  d-flex justify-content-center price" data-price="85.00">€85,00</div>
+            </div>
+            
+            <div class="row mb-4">
+              <div class="col">1</div>
+              <div class="col" ><img class="imgcarrello" src="images/scarpe_square_sarastyle.webp" alt=""></div>
+              <div class="col  d-flex justify-content-center">Sara Style</div>
+              <div class="col  d-flex justify-content-center"><input type="number" class="quantity" min="1" value="1" /></div>
+              <div class="col  d-flex justify-content-center price" data-price="85.00">€85,00</div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col">1</div>
+            <div class="col" ><img class="imgcarrello" src="images/scarpe_square_brunobear.webp" alt=""></div>
+            <div class="col  d-flex justify-content-center">Bruno Bear</div>
+            <div class="col  d-flex justify-content-center"><input type="number" class="quantity" min="1" value="1" /></div>
+            <div class="col  d-flex justify-content-center price" data-price="95.00">€95,00</div>
+        </div>
+
+
+        </div>
     </div>
+    <div class="row justify-content-end">
+        <div class="col-lg-4">
+            <h2>Totale prodotti:</h2>
+            <p id="total">€265,00</p>
+            <h2>Costi di spedizione:</h2>
+            <p>€3,50</p>
+            <h2>Totale:</h2>
+            <p>€268,50</p>
+            <a href="#" class="buttoncarrello">Procedi al pagamento</a>
+        </div>
+    </div>
+</main>
+
 
 
 
