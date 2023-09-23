@@ -16,7 +16,6 @@
   <meta name="author" content="Sara Travain">
   <link rel="icon" href="Images/favicon.ico">
 
-
   <!-- Collegamento ai file CSS di Bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
   <!-- Css -->
@@ -94,128 +93,241 @@ s-64,0-96,0s-64,0-96,0s-64,0-96,0s-64,0-96,0s-64,0-96,0S32,0,16,0H0V71z" />
   <main class="container my-5">
     <h1 class="mb-4">Carrello</h1>
     <div class="row">
-        <div class="col-12">
-            <div class="row mb-4">
-                <div class="col">#</div>
-                <div class="col d-flex justify-content-center">Immagine</div>
-                <div class="col d-flex justify-content-center">Prodotto</div>
-                <div class="col d-flex justify-content-center">Quantità</div>
-                <div class="col d-flex justify-content-center">Prezzo</div>
-            </div>
-            <div class="row mb-4">
-                <div class="col">1</div>
-                <div class="col" ><img class="imgcarrello" src="images/scarpe_square_foryou.webp" alt=""></div>
-                <div class="col  d-flex justify-content-center">For You</div>
-                <div class="col  d-flex justify-content-center"><input type="number" class="quantity" min="1" value="1" /></div>
-                <div class="col  d-flex justify-content-center price" data-price="85.00">€85,00</div>
-            </div>
-            
-            <div class="row mb-4">
-              <div class="col">1</div>
-              <div class="col" ><img class="imgcarrello" src="images/scarpe_square_sarastyle.webp" alt=""></div>
-              <div class="col  d-flex justify-content-center">Sara Style</div>
-              <div class="col  d-flex justify-content-center"><input type="number" class="quantity" min="1" value="1" /></div>
-              <div class="col  d-flex justify-content-center price" data-price="85.00">€85,00</div>
+      <div class="col-12">
+        <div class="row mb-4">
+          <div class="col">#</div>
+          <div class="col d-flex justify-content-center">Immagine</div>
+          <div class="col d-flex justify-content-center">Prodotto</div>
+          <div class="col d-flex justify-content-center">Quantità</div>
+          <div class="col d-flex justify-content-center">Prezzo</div>
+        </div>
+        <div class="row mb-4">
+          <div class="col">1</div>
+          <div class="col"><img class="imgcarrello" src="images/scarpe_square_foryou.webp" alt=""></div>
+          <div class="col  d-flex justify-content-center">For You</div>
+          <div class="col  d-flex justify-content-center"><input type="number" class="quantity" min="1" value="1" />
           </div>
+          <div class="col  d-flex justify-content-center price" data-price="85.00">€85,00</div>
+        </div>
 
-          <div class="row mb-4">
-            <div class="col">1</div>
-            <div class="col" ><img class="imgcarrello" src="images/scarpe_square_brunobear.webp" alt=""></div>
-            <div class="col  d-flex justify-content-center">Bruno Bear</div>
-            <div class="col  d-flex justify-content-center"><input type="number" class="quantity" min="1" value="1" /></div>
-            <div class="col  d-flex justify-content-center price" data-price="95.00">€95,00</div>
+        <div class="row mb-4">
+          <div class="col">1</div>
+          <div class="col"><img class="imgcarrello" src="images/scarpe_square_sarastyle.webp" alt=""></div>
+          <div class="col  d-flex justify-content-center">Sara Style</div>
+          <div class="col  d-flex justify-content-center"><input type="number" class="quantity" min="1" value="1" />
+          </div>
+          <div class="col  d-flex justify-content-center price" data-price="85.00">€85,00</div>
+        </div>
+
+        <div class="row mb-4">
+          <div class="col">1</div>
+          <div class="col"><img class="imgcarrello" src="images/scarpe_square_brunobear.webp" alt=""></div>
+          <div class="col  d-flex justify-content-center">Bruno Bear</div>
+          <div class="col  d-flex justify-content-center"><input type="number" class="quantity" min="1" value="1" />
+          </div>
+          <div class="col  d-flex justify-content-center price" data-price="95.00">€95,00</div>
         </div>
 
 
-        </div>
+      </div>
     </div>
     <div class="row justify-content-end">
-        <div class="col-lg-4">
-            <h2>Totale prodotti:</h2>
-            <p id="total">€265,00</p>
-            <h2>Costi di spedizione:</h2>
-            <p>€3,50</p>
-            <h2>Totale:</h2>
-            <p>€268,50</p>
-            <a href="#" class="buttoncarrello">Procedi al pagamento</a>
-        </div>
+      <div class="col-lg-4">
+        <h2>Totale prodotti:</h2>
+        <p id="total">€265,00</p>
+        <h2>Costi di spedizione:</h2>
+        <p>€3,50</p>
+        <h2>Totale:</h2>
+        <p>€268,50</p>
+        <a href="#" class="buttoncarrello">Procedi al pagamento</a>
+      </div>
     </div>
-</main>
 
 
 
 
 
     <!-- Carousel wrapper -->
-    <div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-mdb-ride="carousel">
-      <!-- Controls -->
-      <div class="d-flex justify-content-center mb-4">
-        <button class="carousel-control-prev position-relative" type="button"
-          data-mdb-target="#carouselMultiItemExample" data-mdb-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next position-relative" type="button"
-          data-mdb-target="#carouselMultiItemExample" data-mdb-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <!-- Inner -->
-      <div class="carousel-inner py-4">
-        <!-- Single item -->
-        <div class="carousel-item active">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="card">
-                  <img src="images/scarpe_square_foryou.webp" class="card-img-top" alt="Waterfall" />
-                  <div class="card-body">
-                    <h5 class="card-title">For You Vans</h5>
-                    <p class="card-text">
-                      Non lasciarti sfuggire questa occasione, acquista subito la scarpa For You e unisciti al
-                      movimento! #4youmovement
-                    </p>
-                    <a class="buttoncarrello" href="prodotto1.html">Visualizza</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 d-none d-lg-block">
-                <div class="card">
-                  <img src="images/scarpe_square_brunobear.webp" class="card-img-top" alt="Sunset Over the Sea" />
-                  <div class="card-body">
-                    <h5 class="card-title">Bruno Bear</h5>
-                    <p class="card-text">
-                      La scarpa è comoda, leggera e facile da abbinare, perfetta per dare un tocco di "cuteness" al tuo
-                      look!
-                    </p>
-                    <a class="buttoncarrello" href="prodotto3.html">Visualizza</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 d-none d-lg-block">
-                <div class="card">
-                  <img src="images/scarpe_square_sarastyle.webp" class="card-img-top" alt="Sunset over the Sea" />
-                  <div class="card-body">
-                    <h5 class="card-title">Sara Style</h5>
-                    <p class="card-text">
-                      la prima della nuova collezione, una collab che promette di stupire e divertire gli amanti delle
-                      sneakers e del design!
-                    </p>
-                    <a class="buttoncarrello" href="prodotto2.html">Visualizza</a>
-                  </div>
-                </div>
-              </div>
+<div
+id="carouselMultiItemExample"
+class="carousel slide carousel-dark text-center"
+data-mdb-interval="false"
+>
+<!-- Controls -->
+<div class="d-flex justify-content-center mb-4">
+  <button
+    class="carousel-control-prev position-relative"
+    type="button"
+    data-mdb-target="#carouselMultiItemExample"
+    data-mdb-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next position-relative"
+    type="button"
+    data-mdb-target="#carouselMultiItemExample"
+    data-mdb-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Inner -->
+<div class="carousel-inner py-4">
+  <!-- Single item -->
+  <div class="carousel-item active">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="images/scarpe_square_foryou.webp" class="card-img-top" alt="Waterfall" />
+            <div class="card-body">
+              <h5 class="card-title">For You Vans</h5>
+              <p class="card-text">
+                Non lasciarti sfuggire questa occasione, acquista subito la scarpa For You e unisciti al
+                movimento! #4youmovement
+              </p>
+              <a class="buttoncarrello" href="prodotto1.html">Visualizza</a>
             </div>
           </div>
         </div>
 
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="card">
+            <img src="images/scarpe_square_brunobear.webp" class="card-img-top" alt="Sunset Over the Sea" />
+            <div class="card-body">
+              <h5 class="card-title">Bruno Bear</h5>
+              <p class="card-text">
+                La scarpa è comoda, leggera e facile da abbinare, perfetta per dare un tocco di "cuteness" al tuo
+                look!
+              </p>
+              <a class="buttoncarrello" href="prodotto3.html">Visualizza</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="card">
+            <img src="images/scarpe_square_sarastyle.webp" class="card-img-top" alt="Sunset over the Sea" />
+            <div class="card-body">
+              <h5 class="card-title">Sara Style</h5>
+              <p class="card-text">
+                la prima della nuova collezione, una collab che promette di stupire e divertire gli amanti delle
+                sneakers e del design!
+              </p>
+              <a class="buttoncarrello" href="prodotto2.html">Visualizza</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- Inner -->
     </div>
-    <!-- Carousel wrapper -->
+  </div>
+
+  <!-- Single item -->
+  <div class="carousel-item">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <img src="images/scarpe_square_brunobear.webp" class="card-img-top" alt="Sunset Over the Sea" />
+            <div class="card-body">
+              <h5 class="card-title">Bruno Bear</h5>
+              <p class="card-text">
+                La scarpa è comoda, leggera e facile da abbinare, perfetta per dare un tocco di "cuteness" al tuo
+                look!
+              </p>
+              <a class="buttoncarrello" href="prodotto3.html">Visualizza</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="card">
+            <img src="images/scarpe_square_brunobear.webp" class="card-img-top" alt="Sunset Over the Sea" />
+            <div class="card-body">
+              <h5 class="card-title">Bruno Bear</h5>
+              <p class="card-text">
+                La scarpa è comoda, leggera e facile da abbinare, perfetta per dare un tocco di "cuteness" al tuo
+                look!
+              </p>
+              <a class="buttoncarrello" href="prodotto3.html">Visualizza</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="card">
+            <img src="images/scarpe_square_sarastyle.webp" class="card-img-top" alt="Sunset over the Sea" />
+            <div class="card-body">
+              <h5 class="card-title">Sara Style</h5>
+              <p class="card-text">
+                la prima della nuova collezione, una collab che promette di stupire e divertire gli amanti delle
+                sneakers e del design!
+              </p>
+              <a class="buttoncarrello" href="prodotto2.html">Visualizza</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Single item -->
+  <div class="carousel-item">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+          <div class="card">
+            <img src="images/scarpe_square_sarastyle.webp" class="card-img-top" alt="Sunset over the Sea" />
+            <div class="card-body">
+              <h5 class="card-title">Sara Style</h5>
+              <p class="card-text">
+                la prima della nuova collezione, una collab che promette di stupire e divertire gli amanti delle
+                sneakers e del design!
+              </p>
+              <a class="buttoncarrello" href="prodotto2.html">Visualizza</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
+          <div class="card">
+            <img src="images/scarpe_square_brunobear.webp" class="card-img-top" alt="Sunset Over the Sea" />
+            <div class="card-body">
+              <h5 class="card-title">Bruno Bear</h5>
+              <p class="card-text">
+                La scarpa è comoda, leggera e facile da abbinare, perfetta per dare un tocco di "cuteness" al tuo
+                look!
+              </p>
+              <a class="buttoncarrello" href="prodotto3.html">Visualizza</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
+          <div class="card">
+            <img src="images/scarpe_square_sarastyle.webp" class="card-img-top" alt="Sunset over the Sea" />
+            <div class="card-body">
+              <h5 class="card-title">Sara Style</h5>
+              <p class="card-text">
+                la prima della nuova collezione, una collab che promette di stupire e divertire gli amanti delle
+                sneakers e del design!
+              </p>
+              <a class="buttoncarrello" href="prodotto2.html">Visualizza</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Inner -->
+</div>
+<!-- Carousel wrapper -->
+    
+
 
 
 
@@ -292,6 +404,9 @@ s-64,0-96,0s-64,0-96,0s-64,0-96,0s-64,0-96,0s-64,0-96,0S32,0,16,0H0V71z" />
         total.innerText = totalPrice.toFixed(2).replace('.', ',');
       });
     }
+
+
+
   </script>
 </body>
 
