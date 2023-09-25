@@ -758,11 +758,6 @@ a.buttoncarrello:hover {
   color: white;
 }
 
-div.col:first-child {
-  max-width: 1px !important;
-  display: block;
-}
-
 
 .imgcarrello {
   width: 50px;
